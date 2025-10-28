@@ -1,20 +1,20 @@
-EmotionsMechInt: Mechanistic Interpretability of Emotional Transformer Circuits
+# EmotionsMechInt: Mechanistic Interpretability of Emotional Transformer Circuits
 
-Overview
+# Overview
 
 This repository is dedicated to the mechanistic interpretability (MI) of transformer models, specifically focusing on how they process and represent emotions in text.
 
 By using TransformerLens, we aim to reverse-engineer the "circuits"—the specific sequence of neurons, attention heads, and MLP layers—that activate to handle emotional concepts, sentiment, and tonal shifts during the model's forward pass. The goal is to move beyond mere performance metrics to achieve a deep, algorithmic understanding of the model's behavior.
 
 
-Prerequisites
+# Prerequisites
 
 Conda or Miniconda (Highly Recommended for managing deep learning dependencies)
 
 Python 3.10+
 
 
-Installation
+# Installation
 
 1. Clone the repository:
 
@@ -43,7 +43,7 @@ The requirements.txt file installs the CPU-only version of PyTorch.
 
 If you are running this research on a machine with an NVIDIA GPU (CUDA), you MUST replace the standard installation by following the specific commands on the official PyTorch website for your CUDA version. This step is necessary to ensure optimal performance.
 
-Project Architecture
+# Project Architecture
 
 The core analysis is modularized into several key components that facilitate the end-to-end interpretability workflow:
 
@@ -88,7 +88,7 @@ Setup: Initialize the environment, load the model, and define the emotion-specif
 Pipeline: Instantiate and run the core pipeline:
 
 from src.emotional_mi_pipeline import EmotionAnalysisPipeline
-# ... other imports for analysis modules
+# other imports for analysis modules
 
 pipeline = EmotionAnalysisPipeline(model_name='gpt2-small', data_path='data/emotion_prompts.csv')
 activations = pipeline.run()
