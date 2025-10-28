@@ -1,0 +1,33 @@
+# Standard ignored files for Python projects
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Virtual Environment
+venv
+.venv
+.conda
+.history
+
+# Python Specific
+__pycache__/
+*.py[cod]
+*$py.class
+dist/
+build/
+*.egg-info/
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*~
+
+# Jupyter Notebook Files
+.ipynb_checkpoints/
+
+# Slurm/HPC Log Files
+slurm/*.err
+slurm/*.out
+
