@@ -96,7 +96,7 @@ activations = pipeline.run()
 
 Analysis: The activations are then passed sequentially to the analysis modules for deep dives:
 
-# 1. Look at intermediate outputs
+# 1. Intermediate outputs
 LogitLensAnalysis.run(activations)
 
 # 2. Validate a hypothesized circuit
