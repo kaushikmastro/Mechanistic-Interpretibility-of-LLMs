@@ -101,11 +101,12 @@ from src.emotional_mi_pipeline import EmotionAnalysisPipeline
 from src.analysis import LogitLensAnalysis, CausalValidationAnalysis, MiVisualisations
 ```
 
-# Initialize and run the core pipeline
+## Initialize and run the core pipeline
+```python
 pipeline = EmotionAnalysisPipeline(
     model_name='llama-chat', 
-    data_path='data/emotion_prompts.csv'
-)
+    data_path='data/emotion_prompts.csv')
+```
 
 This collects all necessary activations from the model's forward pass
 activations = pipeline.run()
