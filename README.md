@@ -51,7 +51,7 @@ Module
 
 Description
 
-emotional_mi_pipeline.py
+"emotional_mi_pipeline.py"
 
 The main orchestrator that loads the model, fetches the data, and runs the initial forward-pass hooks necessary for analysis.
 
