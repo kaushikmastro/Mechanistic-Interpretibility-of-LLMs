@@ -45,41 +45,15 @@ The requirements.txt file installs the CPU-only version of PyTorch. If you are r
 
 The core analysis is modularized into several key components that facilitate the end-to-end interpretability workflow.
 
-Module
+This table outlines the key components of the emotional circuit analysis pipeline, detailing their location and primary function within the project structure.
 
-Location
-
-Description
-
-EmotionAnalysisPipeline
-
-src/emotional_mi_pipeline.py
-
-The main orchestrator that loads the model, fetches the data, and runs the initial forward-pass hooks necessary to capture internal activations.
-
-Logit Lens Analysis
-
-src/analysis/logit_lens_analysis.py
-
-Implements the Logit Lens technique to inspect the predicted logits at every layer, giving an early view into the model's intermediate predictions.
-
-Causal Validation
-
-src/analysis/causal_validation_analysis.py
-
-Conducts causal interventions (e.g., path patching) to validate the function of hypothesized circuits by measuring the effect of disabling or replacing them.
-
-Attention Weights
-
-src/analysis/attention_weights_analysis.py
-
-Focuses on attention head behavior, visualizing attention patterns and analyzing which tokens are attended to during emotional processing.
-
-Visualisations
-
-src/analysis/mi_visualisations.py
-
-Handles all plotting and data visualization (e.g., heatmaps, scatter plots) for the interpretability findings using Matplotlib/Seaborn.
+| Module | Location | Description |
+| :--- | :--- | :--- |
+| **EmotionAnalysisPipeline** | `src/emotional_mi_pipeline.py` | The main orchestrator that loads the model, fetches the data, and runs the initial forward-pass hooks necessary to capture internal activations. |
+| **Logit Lens Analysis** | `src/analysis/logit_lens_analysis.py` | Implements the **Logit Lens** technique to inspect the predicted logits at every layer, giving an early view into the model's intermediate predictions. |
+| **Causal Validation** | `src/analysis/causal_validation_analysis.py` | Conducts **causal interventions** (e.g., path patching) to validate the function of hypothesized circuits by measuring the effect of disabling or replacing them. |
+| **Attention Weights** | `src/analysis/attention_weights_analysis.py` | Focuses on **attention head behavior**, visualizing attention patterns and analyzing which tokens are attended to during emotional processing. |
+| **Visualisations** | `src/analysis/mi_visualisations.py` | Handles all plotting and data visualization (e.g., heatmaps, scatter plots) for the interpretability findings using Matplotlib/Seaborn. |
 
 ## Analysis Workflow
 
