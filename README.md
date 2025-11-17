@@ -1,12 +1,12 @@
-## EmotionsMechInt: Mechanistic Interpretability of Emotional Transformer Circuits
+# EmotionsMechInt: Mechanistic Interpretability of Emotional Transformer Circuits
 
-# Overview
+## Overview
 
 This repository is dedicated to the mechanistic interpretability (MI) of transformer models, specifically focusing on how they process and represent emotions in text.
 
 By using the TransformerLens library, we aim to reverse-engineer the "circuits"—the specific sequence of neurons, attention heads, and MLP layers—that activate to handle emotional concepts, sentiment, and tonal shifts during the model's forward pass. The goal is to move beyond mere performance metrics to achieve a deep, algorithmic understanding of the model's behavior.
 
-🛠️ Prerequisites & Installation
+## Prerequisites & Installation
 
 Prerequisites
 
@@ -41,7 +41,7 @@ pip install -r requirements.txt
 
 The requirements.txt file installs the CPU-only version of PyTorch. If you are running this research on a machine with an NVIDIA GPU (CUDA), you MUST replace the standard installation by following the specific commands on the official PyTorch website for your CUDA version. This step is necessary to ensure optimal performance.
 
-💻 Project Architecture
+## Project Architecture
 
 The core analysis is modularized into several key components that facilitate the end-to-end interpretability workflow.
 
@@ -81,7 +81,7 @@ src/analysis/mi_visualisations.py
 
 Handles all plotting and data visualization (e.g., heatmaps, scatter plots) for the interpretability findings using Matplotlib/Seaborn.
 
-🚀 Analysis Workflow
+## Analysis Workflow
 
 The primary entry point for running and exploring the research is the main Jupyter Notebook.
 
