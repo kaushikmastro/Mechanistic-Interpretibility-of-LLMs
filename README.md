@@ -1,6 +1,6 @@
-EmotionsMechInt: Mechanistic Interpretability of Emotional Transformer Circuits
+## EmotionsMechInt: Mechanistic Interpretability of Emotional Transformer Circuits
 
-🔬 Overview
+# Overview
 
 This repository is dedicated to the mechanistic interpretability (MI) of transformer models, specifically focusing on how they process and represent emotions in text.
 
