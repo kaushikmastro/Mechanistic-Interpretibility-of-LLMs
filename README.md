@@ -99,6 +99,7 @@ The notebook follows the standard MI methodology:
 ```python
 from src.emotional_mi_pipeline import EmotionAnalysisPipeline
 from src.analysis import LogitLensAnalysis, CausalValidationAnalysis, MiVisualisations
+'''
 
 # Initialize and run the core pipeline
 pipeline = EmotionAnalysisPipeline(
