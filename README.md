@@ -65,7 +65,6 @@ Implements the Logit Lens technique to inspect the predicted logits at every lay
 
 Causal Validation
 
-'''
 src/analysis/causal_validation_analysis.py
 
 Conducts causal interventions (e.g., path patching) to validate the function of hypothesized circuits by measuring the effect of disabling or replacing them.
@@ -97,7 +96,7 @@ Example Implementation
 The notebook follows the standard MI methodology:
 
 1. Pipeline Setup & Run
-
+```python
 from src.emotional_mi_pipeline import EmotionAnalysisPipeline
 from src.analysis import LogitLensAnalysis, CausalValidationAnalysis, MiVisualisations
 
