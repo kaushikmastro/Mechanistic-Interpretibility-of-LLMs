@@ -114,14 +114,14 @@ activations = pipeline.run()
 
 The collected activations are passed sequentially to the analysis modules for deep dives:
 
-# 1. Intermediate outputs check
+## 1. Intermediate outputs check
 LogitLensAnalysis.run(activations)
 
-# 2. Validate a hypothesized circuit
+## 2. Validate a hypothesized circuit
 CausalValidationAnalysis.run(
     model=pipeline.model, 
     circuit_path=[(6, 'attn'), (10, 'mlp'), (12, 'attn')] # Example hypothesized path
 )
 
-# 3. Visualize findings
+## 3. Visualize findings
 MiVisualisations.plot_head_outputs(activations)
