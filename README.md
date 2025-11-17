@@ -101,7 +101,7 @@ from src.emotional_mi_pipeline import EmotionAnalysisPipeline
 from src.analysis import LogitLensAnalysis, CausalValidationAnalysis, MiVisualisations
 ```
 
-## Initialize and run the core pipeline
+### Initialize and run the core pipeline
 ```python
 pipeline = EmotionAnalysisPipeline(
     model_name='llama-chat', 
