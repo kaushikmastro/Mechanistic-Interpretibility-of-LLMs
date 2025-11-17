@@ -104,3 +104,7 @@ CausalValidationAnalysis.run(model=pipeline.model, circuit_path=...)
 
 # 3. Visualize findings
 MiVisualisations.plot_head_outputs(activations)
+
+
+conda create --name emotions-mech-int python=3.10
+conda activate emotions-mech-int
