@@ -90,7 +90,7 @@ Pipeline: Instantiate and run the core pipeline:
 from src.emotional_mi_pipeline import EmotionAnalysisPipeline
 # other imports for analysis modules
 
-pipeline = EmotionAnalysisPipeline(model_name='gpt2-small', data_path='data/emotion_prompts.csv')
+pipeline = EmotionAnalysisPipeline(model_name='llama-chat', data_path='data/emotion_prompts.csv')
 activations = pipeline.run()
 
 
