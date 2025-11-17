@@ -106,7 +106,7 @@ pipeline = EmotionAnalysisPipeline(
     data_path='data/emotion_prompts.csv'
 )
 
-# This collects all necessary activations from the model's forward pass
+This collects all necessary activations from the model's forward pass
 activations = pipeline.run()
 
 
