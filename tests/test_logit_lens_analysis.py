@@ -16,6 +16,7 @@ def mock_pipeline():
     pipeline.model = MagicMock()
     pipeline.model.cfg = MagicMock()
     pipeline.model.cfg.n_layers = 2
+    pipeline.device = "cpu"
     
     # We will assume a hidden dimension of 768 and a vocab size of 32000
     hidden_dim = 768
