@@ -24,3 +24,4 @@ transformer-lens
 # Included a few base libraries that are commonly required by the above packages
 # that might not be correctly satisfied by a non-conda environment.
 requests==2.32.5
+transformers<5.0.0
