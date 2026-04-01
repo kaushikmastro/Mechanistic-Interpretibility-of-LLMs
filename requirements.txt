@@ -1,40 +1,26 @@
---- Core Data Science & Analysis ---
-
+# --- Core Data Science & Analysis ---
 numpy==2.2.6
 pandas==2.3.1
 scipy==1.15.2
 matplotlib==3.10.5
 seaborn==0.13.2
 
---- Machine Learning & Transformers ---
-
-PyTorch (torch)
-
-NOTE: This version is the CPU-compiled package.
-
-If you are using a GPU (CUDA), you may need to install the correct
-
-version directly from the PyTorch website (e.g., via conda or a specific pip command)
-
-to ensure CUDA compatibility, as requirements.txt is best for pure pip dependencies.
-
+# --- Machine Learning & Transformers ---
+# PyTorch (torch)
+# NOTE: This version is the CPU-compiled package.
+# If you are using a GPU (CUDA), you may need to install the correct
+# version directly from the PyTorch website (e.g., via conda or a specific pip command)
+# to ensure CUDA compatibility, as requirements.txt is best for pure pip dependencies.
 torch==2.5.1
 
-Scikit-learn (used for confusion matrix, train/test split)
-
+# Scikit-learn (used for confusion matrix, train/test split)
 scikit-learn==1.7.1
 
-Transformer Lens
-
-Note: latest compatible version via pip.
-
+# Transformer Lens
+# Note: latest compatible version via pip.
 transformer-lens
 
---- Utilities ---
-
-Included a few base libraries that are commonly required by the above packages
-
-that might not be correctly satisfied by a non-conda environment.
-
+# --- Utilities ---
+# Included a few base libraries that are commonly required by the above packages
+# that might not be correctly satisfied by a non-conda environment.
 requests==2.32.5
-pyyaml==6.0.2
